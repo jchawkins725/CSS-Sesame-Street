@@ -1,21 +1,58 @@
-* {
+body {
     margin: 0;
+    background-image: url(sesamestreet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   @keyframes wave {
     from {transform: rotateZ(40deg);}
     to {transform: rotateZ(50deg);}
   }
-  
+  #hello {
+    position: relative;
+    left: 30px;
+    bottom: 40px;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:linear-gradient(to bottom, #d10000 5%, #ff0000 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d10000', endColorstr='#ff0000',GradientType=0);
+    background-color:#d10000;
+    border: none;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:18px;
+    font-weight:bold;
+    padding:11px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+  }
+  #hello:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #d10000));
+    background:-moz-linear-gradient(top, #ff0000 5%, #d10000 100%);
+    background:-webkit-linear-gradient(top, #ff0000 5%, #d10000 100%);
+    background:-o-linear-gradient(top, #ff0000 5%, #d10000 100%);
+    background:-ms-linear-gradient(top, #ff0000 5%, #d10000 100%);
+    background:linear-gradient(to bottom, #ff0000 5%, #d10000 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#d10000',GradientType=0);
+    background-color:#ff0000;
+  }
+  #hello:active {
+    position:relative;
+    bottom: 37px;
+  }
   #container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     width: 100vw;
     height: 100vh;
   }
   .item {
     width: 200px;
     height: 300px;
+    padding-bottom: 60px;
   }
   #head {
     width: 100px;
@@ -28,13 +65,12 @@
     }
   #eye-left {
     background: white;
-    border: solid 1px;
     border-radius: 100%;
     height: 23px;
     width: 23px;
     position: absolute;
     top: -10px;
-    left: 25px;
+    left: 27px;
   }
   #eye-ball-left {
     background: black;
@@ -48,13 +84,12 @@
   }
   #eye-right {
     background: white;
-    border: solid 1px;
     border-radius: 100%;
     height: 23px;
     width: 23px;
     position: absolute;
     top: -10px;
-    left: 50px;
+    left: 51px;
   }
   #eye-ball-right {
     background: black;
@@ -78,26 +113,27 @@
   #mouth {
     width: 66px;
     height: 30px;
-    background-color: black;
+    background: black;
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
     position: absolute;
     top: 43px;
     left: 18px;
+    z-index: 2;
   }
   #body {
     width: 90px;
     height: 110px;
-    background-color: red;
+    background: red;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     position: relative;
     left: 55px;
-    z-index: -1;
+    z-index: 1;
   }
   #left-side {
-  border: solid;
-  height: 
-  }
+    border: solid;
+    }
+
   #left-arm {
     width: 20px;
     height: 100px;
@@ -240,7 +276,6 @@
     position: absolute;
     left: 103px;
     top: -20px;
-    border: 
   }
   #left-foot {
     height: 30px;
