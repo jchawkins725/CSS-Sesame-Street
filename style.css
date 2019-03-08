@@ -13,30 +13,21 @@ body {
     left: 30px;
     bottom: 40px;
     box-shadow: 0px 10px 14px -7px #276873;
-    background:linear-gradient(to bottom, #d10000 5%, #ff0000 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d10000', endColorstr='#ff0000',GradientType=0);
-    background-color:#d10000;
+    background:white;
     border: none;
     border-radius:8px;
     display:inline-block;
     cursor:pointer;
-    color:#ffffff;
+    color: red;
     font-family:Arial;
     font-size:18px;
     font-weight:bold;
     padding:11px 32px;
     text-decoration:none;
-    text-shadow:0px 1px 0px #3d768a;
   }
   #hello:hover {
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff0000), color-stop(1, #d10000));
-    background:-moz-linear-gradient(top, #ff0000 5%, #d10000 100%);
-    background:-webkit-linear-gradient(top, #ff0000 5%, #d10000 100%);
-    background:-o-linear-gradient(top, #ff0000 5%, #d10000 100%);
-    background:-ms-linear-gradient(top, #ff0000 5%, #d10000 100%);
-    background:linear-gradient(to bottom, #ff0000 5%, #d10000 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#d10000',GradientType=0);
-    background-color:#ff0000;
+    background: red;
+    color: white;
   }
   #hello:active {
     position:relative;
@@ -157,6 +148,7 @@ body {
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    animation-play-state: paused;
   }
   #left-hand {
     width: 30px;
